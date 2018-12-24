@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Loan" parallel="tests" thread-count="2">
+<listeners>
+<listener class-name="TestNG.Listeners"/>
+</listeners>
+<parameter name="URL" value="Parametre.com"/>
+  <test parallel="classes" thread-count="3" name="Test">
+  <parameter name="APIKEY" value="123"/>  
+    <classes>
+      <class name="TestNG.parameter1"/>
+      <class name="TestNG.Ng2Test"/>
+       <class name="TestNG.parameter2"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
